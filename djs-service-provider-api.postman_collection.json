@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "df725410-8aca-41a2-ad00-aeece227846d",
+		"name": "DJS Service Provider API",
+		"description": "In the respective operation, the partner system may receive a set of arguments as input. It is specified in the journey definition which arguments are to be sent, if any. These arguments can for example carry answers to previous questions and their use depends on the partner’s business case.\n\nThe session identifier can be used by the partner system to keep track on different sessions and to correlate several requests that might be sent during the same session.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13106288",
+		"_collection_link": "https://universal-astronaut-848714.postman.co/workspace/DJS~7f7618fc-ce9a-43c8-833f-7aa3aae87b82/collection/13106288-df725410-8aca-41a2-ad00-aeece227846d?action=share&creator=13106288&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "GetDynamicArguments",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"arguments\": [\n    {\n      \"key\": {\n        \"value\": \"yearofbirth\"\n      },\n      \"value\": {\n        \"value\": \"1990\"\n      }\n    }\n  ],\n  \"languageCode\": \"EN\",\n  \"sessionIdentifier\": \"3bbbed98-ee5f-4c05-ac40-ac8b8db8cbb6\",\n  \"journeyIdentifier\": \"1489dbe9-8838-4783-93dc-20e0221ab3fd\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/getdynamicarguments",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"getdynamicarguments"
+					]
+				},
+				"description": "Used to fetch data from a URL configured in the journey definition. The data will be added to user's session."
+			},
+			"response": [
+				{
+					"name": "Service Provider responds with additional arguments that are added to the session.",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"arguments\": [\n    {\n      \"key\": {\n        \"value\": \"yearofbirth\"\n      },\n      \"value\": {\n        \"value\": \"1990\"\n      }\n    }\n  ],\n  \"languageCode\": \"EN\",\n  \"sessionIdentifier\": \"3bbbed98-ee5f-4c05-ac40-ac8b8db8cbb6\",\n  \"journeyIdentifier\": \"1489dbe9-8838-4783-93dc-20e0221ab3fd\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/getdynamicarguments",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"getdynamicarguments"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"arguments\": [\n    {\n      \"key\": {\n        \"value\": \"yearofbirth\"\n      },\n      \"value\": {\n        \"value\": \"1990\"\n      }\n    },\n    {\n      \"key\": {\n        \"value\": \"username\"\n      },\n      \"value\": {\n        \"value\": \"Walden\"\n      }\n    }\n  ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GetDynamicOptions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"arguments\": [\n    {\n      \"key\": {\n        \"value\": \"yearofbirth\"\n      },\n      \"value\": {\n        \"value\": \"1990\"\n      }\n    }\n  ],\n  \"languageCode\": \"EN\",\n  \"sessionIdentifier\": \"3bbbed98-ee5f-4c05-ac40-ac8b8db8cbb6\",\n  \"journeyIdentifier\": \"1489dbe9-8838-4783-93dc-20e0221ab3fd\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/getdynamicoptions",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"getdynamicoptions"
+					]
+				},
+				"description": "Used to fetch data from a URL configured in the journey definition. The data will be used to create dynamic choices of selection as part of the journey."
+			},
+			"response": [
+				{
+					"name": "Service Provider responds with a bi-dimensional list of options with arguments that will be used to create dynamic choices of selection as part of the journey.",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"arguments\": [\n    {\n      \"key\": {\n        \"value\": \"yearofbirth\"\n      },\n      \"value\": {\n        \"value\": \"1990\"\n      }\n    }\n  ],\n  \"languageCode\": \"EN\",\n  \"sessionIdentifier\": \"3bbbed98-ee5f-4c05-ac40-ac8b8db8cbb6\",\n  \"journeyIdentifier\": \"1489dbe9-8838-4783-93dc-20e0221ab3fd\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/getdynamicoptions",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"getdynamicoptions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"argumentsList\": [\n    {\n      \"arguments\": [\n        {\n          \"key\": {\n            \"value\": \"arg1key1\"\n          },\n          \"value\": {\n            \"value\": \"arg1 value 1\"\n          }\n        },\n        {\n          \"key\": {\n            \"value\": \"arg1key2\"\n          },\n          \"value\": {\n            \"value\": \"arg1 value 2\"\n          }\n        }\n      ]\n    },\n    {\n      \"arguments\": [\n        {\n          \"key\": {\n            \"value\": \"arg2key1\"\n          },\n          \"value\": {\n            \"value\": \"arg2 value 1\"\n          }\n        },\n        {\n          \"key\": {\n            \"value\": \"arg2key2\"\n          },\n          \"value\": {\n            \"value\": \"arg2 value 2\"\n          }\n        },\n        {\n          \"key\": {\n            \"value\": \"arg2key3\"\n          },\n          \"value\": {\n            \"value\": \"arg2 value 3\"\n          }\n        }\n      ]\n    }\n  ]\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/",
+			"type": "string"
+		}
+	]
+}
