@@ -1,0 +1,43 @@
+<dynamicoptions>
+
+	<header>
+		<texts>
+			<text>
+				<languagecode>en</languagecode>
+				<textmessage>GOTV Packages</textmessage>
+			</text>
+		</texts>
+	</header>
+
+	<footer>
+		<texts>
+			<text>
+				<languagecode>en</languagecode>
+				<textmessage>Please select a package</textmessage>
+			</text>
+		</texts>
+	</footer>
+
+	<url>https://provider-gateway.com/djs</url>
+
+	<display>
+		<texts>
+			<text>
+				<languagecode>en</languagecode>
+				<textmessage>${package_name} at ${package_price} for {package_period}</textmessage>
+			</text>
+		</texts>
+	</display>
+
+	<arguments>
+		<argument>
+			<key>step</key>
+			<value>getting_package_list</value>
+		</argument>
+		<argument>
+			<key>service_name</key>
+			<value>${service_name}</value>
+		</argument>
+	</arguments>
+
+</dynamicoptions>

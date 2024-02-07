@@ -1,0 +1,13 @@
+<dynamicarguments>
+	<url>https://provider.com/pay_tv</url>
+	<arguments>
+		<argument>
+			<key>service_name</key>
+			<value>${service_name}</value>
+		</argument>
+		<argument>
+			<key>package_id</key>
+			<value>${package_id}</value>
+		</argument>
+	</arguments>
+</dynamicarguments>

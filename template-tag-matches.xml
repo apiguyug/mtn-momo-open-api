@@ -1,0 +1,28 @@
+<matches>
+	<key>payment_request_status</key>
+	<pattern>initiated</pattern>
+	<yes>
+		<instructions>
+			<response>
+				<texts>
+					<text>
+						<languagecode>en</languagecode>
+						<textmessage>Payment Request has been accepted</textmessage>
+					</text>
+				</texts>
+			</response>
+		</instructions>
+	</yes>
+	<no>
+		<instructions>
+			<response>
+				<texts>
+					<text>
+						<languagecode>en</languagecode>
+						<textmessage>Could not process Transaction. Please try again.</textmessage>
+					</text>
+				</texts>
+			</response>
+		</instructions>
+	</no>
+</matches>

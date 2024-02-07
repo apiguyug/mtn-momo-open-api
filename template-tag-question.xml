@@ -1,0 +1,24 @@
+<question>
+	<key>card_number</key>
+	<retries>2</retries>
+	<confidential>false</confidential>
+	<display>
+		<texts>
+			<text>
+				<languagecode>en</languagecode>
+				<textmessage>Please enter your Card Number</textmessage>
+			</text>
+		</texts>
+	</display>
+	<validation>
+		<pattern>\d+</pattern>
+		<errormessage>
+			<texts>
+				<text>
+					<languagecode>en</languagecode>
+					<textmessage>Enter Valid Card Number.</textmessage>
+				</text>
+			</texts>
+		</errormessage>
+	</validation>
+</question>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<op:journeydefinition xmlns:op="http://www.ericsson.com/em/djs/journey/v1_0/common/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<instructions>
+    
+</instructions>
+</op:journeydefinition>

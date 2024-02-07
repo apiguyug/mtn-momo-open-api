@@ -1,0 +1,46 @@
+<options>
+	<header>
+		<texts>
+			<text>
+				<languagecode>en</languagecode>
+				<textmessage>ABC TV Services</textmessage>
+			</text>
+		</texts>
+	</header>
+	<optionslist>
+		<option>
+			<display>
+				<texts>
+					<text>
+						<languagecode>en</languagecode>
+						<textmessage>GOTV Payment</textmessage>
+					</text>
+				</texts>
+			</display>
+			<instructions>
+				<argument>
+					<key>service_name</key>
+					<value>GOTV</value>
+				</argument>
+				<!-- Can contain other instruction types -->
+			</instructions>
+		</option>
+		<option>
+			<display>
+				<texts>
+					<text>
+						<languagecode>en</languagecode>
+						<textmessage>DSTV Payment</textmessage>
+					</text>
+				</texts>
+			</display>
+			<instructions>
+				<argument>
+					<key>service_name</key>
+					<value>GOTV</value>
+				</argument>
+				<!-- Can contain other instruction types -->
+			</instructions>
+		</option>
+	</optionslist>
+</options>

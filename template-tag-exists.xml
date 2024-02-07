@@ -1,0 +1,27 @@
+<exists>
+	<key>generated_order_number</key>
+	<yes>
+		<instructions>
+			<response>
+				<texts>
+					<text>
+						<languagecode>en</languagecode>
+						<textmessage>Payment Request has been accepted your Transaction ID: ${generated_order_number}</textmessage>
+					</text>
+				</texts>
+			</response>
+		</instructions>
+	</yes>
+	<no>
+		<instructions>
+			<response>
+				<texts>
+					<text>
+						<languagecode>en</languagecode>
+						<textmessage>Could not process Transaction. Please try again.</textmessage>
+					</text>
+				</texts>
+			</response>
+		</instructions>
+	</no>
+</exists>
